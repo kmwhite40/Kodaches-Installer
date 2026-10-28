@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Downloads · Kodaches</title>
+<meta name="description" content="Install Kodaches for Kodi on Android TV, Fire TV, Windows, Linux and macOS.">
+<link rel="icon" href="../assets/icon.png">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../"><img src="../assets/icon.png" alt="" width="36" height="36">Kodaches</a>
+  <nav>
+    <a href="../install/">Install</a>
+    <a href="../android/">Android TV</a>
+    <a href="../firetv/">Fire TV</a>
+    <a href="../samsung/">Samsung</a>
+    <a href="../windows-linux/">Computers</a>
+    <a href="../downloads/">Downloads</a>
+    <a href="../releases/">Releases</a>
+    <a href="../troubleshooting/">Help</a>
+  </nav>
+</header>
+<main>
+<h1>Downloads</h1>
+<p class="lead">Kodaches 1.0.0. Most people only need the repository zip (or the source address in <a href="../install/">Install</a>); Kodi installs the rest.</p>
+<table>
+  <tr><th>File</th><th>What it is</th><th>SHA-256</th></tr>
+  <tr><td><a href="../kodi/repository.kodaches-1.0.0.zip">repository.kodaches-1.0.0.zip</a></td><td>Kodaches Repository: install this from zip</td><td><code id="sha-repo">see SHA256SUMS</code></td></tr>
+  <tr><td><a href="../repo/plugin.video.kodaches/plugin.video.kodaches-1.0.0.zip">plugin.video.kodaches-1.0.0.zip</a></td><td>The Kodaches add-on (Kodi installs it from the repository)</td><td><code id="sha-plugin">see SHA256SUMS</code></td></tr>
+  <tr><td><a href="../manifest.json">manifest.json</a></td><td>Release manifest: versions, sizes, checksums</td><td></td></tr>
+  <tr><td><a href="../SHA256SUMS">SHA256SUMS</a></td><td>Checksums for every package</td><td></td></tr>
+</table>
+<div class="qr">
+  <figure><img src="../qr-install.png" alt="QR code for the install page"><figcaption>Install page</figcaption></figure>
+  <figure><img src="../qr-kodi-source.png" alt="QR code for the Kodi source"><figcaption>Kodi source address</figcaption></figure>
+</div>
+<p>Kodi itself comes only from <a href="https://kodi.tv/download/">kodi.tv</a> or your device's app store; Kodaches does not redistribute it.</p>
+<script>
+fetch("../manifest.json").then(r => r.json()).then(m => {
+  for (const a of m.addons) {
+    const el = document.getElementById(a.id === "repository.kodaches" ? "sha-repo" : "sha-plugin");
+    if (el) el.textContent = a.sha256;
+  }
+}).catch(() => {});
+</script>
+</main>
+<footer>
+  Kodaches 1.0.0 · Kodi add-on for households that run a Galaxy server · Kodaches hosts no content
+  · <a href="../manifest.json">manifest.json</a> · <a href="../SHA256SUMS">SHA256SUMS</a>
+</footer>
+</body>
+</html>

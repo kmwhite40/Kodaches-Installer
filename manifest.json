@@ -1,0 +1,32 @@
+{
+  "name": "Kodaches",
+  "version": "1.0.0",
+  "released": "2026-10-28T15:14:51+00:00",
+  "kodi": {
+    "minimum": "20.0",
+    "tested": [
+      "21.2"
+    ],
+    "source": "https://kmwhite40.github.io/Kodaches-Installer/kodi/"
+  },
+  "addons": [
+    {
+      "id": "plugin.video.kodaches",
+      "version": "1.0.0",
+      "zip": "repo/plugin.video.kodaches/plugin.video.kodaches-1.0.0.zip",
+      "sha256": "ed29184457979a72a41fc401ba0cdd736332bc950f5cbe36a44f4f0aff7cc2b6",
+      "size": 115734
+    },
+    {
+      "id": "repository.kodaches",
+      "version": "1.0.0",
+      "zip": "repo/repository.kodaches/repository.kodaches-1.0.0.zip",
+      "sha256": "0f87e63ac31aa7e29ccf702ba6fd0668237ee57d8abadb4854d8ca8af53c27e2",
+      "size": 91410
+    }
+  ],
+  "install": {
+    "kodi_source": "https://kmwhite40.github.io/Kodaches-Installer/kodi/",
+    "page": "https://kmwhite40.github.io/Kodaches-Installer/install/"
+  }
+}

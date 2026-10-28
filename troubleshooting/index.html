@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Help · Kodaches</title>
+<meta name="description" content="Install Kodaches for Kodi on Android TV, Fire TV, Windows, Linux and macOS.">
+<link rel="icon" href="../assets/icon.png">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../"><img src="../assets/icon.png" alt="" width="36" height="36">Kodaches</a>
+  <nav>
+    <a href="../install/">Install</a>
+    <a href="../android/">Android TV</a>
+    <a href="../firetv/">Fire TV</a>
+    <a href="../samsung/">Samsung</a>
+    <a href="../windows-linux/">Computers</a>
+    <a href="../downloads/">Downloads</a>
+    <a href="../releases/">Releases</a>
+    <a href="../troubleshooting/">Help</a>
+  </nav>
+</header>
+<main>
+<h1>Help</h1>
+<h2>"No Galaxy server was found"</h2>
+<ul>
+  <li>The Kodi device must be on the same home network as Galaxy (not a guest Wi-Fi network).</li>
+  <li>Type the address yourself when asked: the one the Galaxy apps use, for example <code>http://192.168.1.20:8080</code>.</li>
+  <li>To change it later: Kodaches → Settings &amp; looks → Galaxy server.</li>
+</ul>
+<h2>"Couldn't connect to network server" when adding the source</h2>
+<ul>
+  <li>Check the address letter by letter, including <code>https://</code> and the final <code>/kodi/</code>.</li>
+  <li>Check the device's date and time; a wrong clock breaks secure connections.</li>
+</ul>
+<h2>A channel does not play</h2>
+<ul>
+  <li>Free channels come from the broadcasters' public streams, which sometimes go offline. Galaxy hides channels that stay offline; try another channel.</li>
+  <li>Many German public broadcasters (ARD, ZDF and their regional channels) only stream inside Germany. From other countries those channels fail; Kodaches does not get around this.</li>
+  <li>Stuttering on HLS channels: Kodaches → Settings &amp; looks → Add-on settings → Playback → <em>Play HLS with InputStream Adaptive</em> (install InputStream Adaptive from the official Kodi repository first).</li>
+</ul>
+<h2>Local channels: where are ABC, CBS and PBS?</h2>
+<p>Only a few local stations publish free streams. For the rest, an antenna tuner (such as an HDHomeRun) connected to Galaxy adds them under <em>My channels</em>.</p>
+<h2>Kodi is slow on a Fire TV Stick</h2>
+<p>Use the <strong>Performance</strong> or <strong>Smart TV</strong> look, and restart the Fire TV once a week (Settings → My Fire TV → Restart).</p>
+<h2>Updates</h2>
+<p>Kodaches → Settings &amp; looks → <em>Check for updates</em>. If Kodi says the repository cannot be reached, open <a href="../manifest.json">manifest.json</a> in a browser to check this site is up.</p>
+</main>
+<footer>
+  Kodaches 1.0.0 · Kodi add-on for households that run a Galaxy server · Kodaches hosts no content
+  · <a href="../manifest.json">manifest.json</a> · <a href="../SHA256SUMS">SHA256SUMS</a>
+</footer>
+</body>
+</html>

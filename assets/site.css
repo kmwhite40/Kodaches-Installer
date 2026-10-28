@@ -1,0 +1,34 @@
+:root{--bg:#0a1022;--panel:#121a33;--line:#24304f;--text:#e9eef7;--muted:#9fb0c8;--accent:#00b4be;--warm:#ffb02e;--code:#0d1530}
+@media (prefers-color-scheme:light){:root{--bg:#f6f8fb;--panel:#fff;--line:#dbe2ec;--text:#121a2b;--muted:#5a6a80;--accent:#00838b;--warm:#a15c00;--code:#eef2f7}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}
+.top{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;padding:14px 24px;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;color:var(--text);text-decoration:none}
+.brand img{border-radius:8px}
+nav{display:flex;flex-wrap:wrap;gap:4px 16px}
+nav a{color:var(--muted);text-decoration:none;font-weight:500}
+nav a:hover{color:var(--text)}
+main{max-width:880px;margin:0 auto;padding:32px 16px 48px}
+h1{font-size:34px;line-height:1.2;margin:0 0 12px}
+h2{font-size:22px;margin:36px 0 10px}
+.lead{font-size:19px;color:var(--muted);margin:0 0 24px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;text-decoration:none;color:var(--text)}
+.card strong{display:block;font-size:18px;margin-bottom:4px}
+.card span{color:var(--muted);font-size:15px}
+a.card:hover{border-color:var(--accent)}
+ol.steps{padding-left:22px}
+ol.steps li{margin:10px 0}
+code,.url{background:var(--code);border:1px solid var(--line);border-radius:6px;padding:2px 7px;font:15px ui-monospace,SFMono-Regular,Menlo,monospace;word-break:break-all}
+.url{display:inline-block;font-size:17px;padding:6px 10px;margin:4px 0}
+.note{border-left:4px solid var(--warm);background:var(--panel);padding:12px 16px;border-radius:0 8px 8px 0;margin:18px 0}
+.ok{border-left-color:var(--accent)}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:15px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+td code{font-size:13px}
+.qr{display:flex;flex-wrap:wrap;gap:24px;margin:16px 0}
+.qr figure{margin:0;text-align:center;color:var(--muted);font-size:14px}
+.qr img{width:180px;height:180px;background:#fff;padding:6px;border-radius:8px}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:14px;padding:18px 24px;text-align:center}
+@media (max-width:600px){h1{font-size:28px}.top{padding:12px 16px}}
