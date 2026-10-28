@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.kodaches" name="Kodaches" version="1.0.0" provider-name="Kodaches">
+<addon id="plugin.video.kodaches" name="Kodaches" version="1.0.1" provider-name="Kodaches">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
     </requires>
@@ -18,7 +18,7 @@
         <disclaimer lang="de_DE">Kodaches hostet oder liefert keine Inhalte. Die Verfügbarkeit der Sender hängt von den öffentlichen Streams der Sender ab.</disclaimer>
         <platform>all</platform>
         <license>GPL-2.0-or-later</license>
-        <news>1.0.0: first release</news>
+        <news>1.0.1: maintenance release. 1.0.0: first release</news>
         <assets>
             <icon>resources/icon.png</icon>
             <fanart>resources/fanart.jpg</fanart>
