@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.kodaches" name="Kodaches" version="2.1.0" provider-name="Kodaches">
+<addon id="plugin.video.kodaches" name="Kodaches" version="2.2.0" provider-name="Kodaches">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
     </requires>
@@ -18,7 +18,7 @@
         <disclaimer lang="de_DE">Kodaches hostet oder liefert keine Inhalte. Die Verfügbarkeit der Sender hängt von den öffentlichen Streams der Sender ab.</disclaimer>
         <platform>all</platform>
         <license>GPL-2.0-or-later</license>
-        <news>2.1.0: faster lists (pages of 100), background clean-up of channels that stopped working, fastest stream first, adaptive streaming on by default, Streaming apps (YouTube, Disney+, Paramount+, ESPN, FOX Sports, PBS, OpenSubtitles), build setup, maintenance, home-screen rows for the Kodaches skin. 2.0.0: standalone. Channels, sports schedules and films come straight from public sources; no server needed. Favorites and recently watched are kept on this device. A channel whose feed fails switches to its next feed.</news>
+        <news>2.2.0: TV guide. Adaptive streaming is off again by default (it crashed Kodi on some German live streams). Kodaches channels in Kodi's TV section (official IPTV Simple client) with programme information for about 550 channels; what is on now shown in channel lists; TV Guide on the Kodaches home menu. 2.1.0: faster lists (pages of 100), background clean-up of channels that stopped working, fastest stream first, adaptive streaming on by default, Streaming apps (YouTube, Disney+, Paramount+, ESPN, FOX Sports, PBS, OpenSubtitles), build setup, maintenance, home-screen rows for the Kodaches skin. 2.0.0: standalone. Channels, sports schedules and films come straight from public sources; no server needed. Favorites and recently watched are kept on this device. A channel whose feed fails switches to its next feed.</news>
         <assets>
             <icon>resources/icon.png</icon>
             <fanart>resources/fanart.jpg</fanart>
@@ -54,7 +54,7 @@
         </assets>
     </extension>
 </addon>
-<addon id="skin.kodaches" version="1.0.0" name="Kodaches" provider-name="Kodaches">
+<addon id="skin.kodaches" version="1.1.0" name="Kodaches" provider-name="Kodaches">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0"/>
 	</requires>
