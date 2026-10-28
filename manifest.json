@@ -1,7 +1,7 @@
 {
   "name": "Kodaches",
-  "version": "2.0.0",
-  "released": "2026-10-28T16:45:14+00:00",
+  "version": "2.1.0",
+  "released": "2026-10-28T18:03:16+00:00",
   "kodi": {
     "minimum": "20.0",
     "tested": [
@@ -12,17 +12,24 @@
   "addons": [
     {
       "id": "plugin.video.kodaches",
-      "version": "2.0.0",
-      "zip": "repo/plugin.video.kodaches/plugin.video.kodaches-2.0.0.zip",
-      "sha256": "4e1a770e08df4a3eb8d982fe19f8a549be0a84fd66552ace505d1ae41ac3fbcf",
-      "size": 118246
+      "version": "2.1.0",
+      "zip": "repo/plugin.video.kodaches/plugin.video.kodaches-2.1.0.zip",
+      "sha256": "521c5fb9adc179be07472b26542982a0f1913be1406d7b88834d3484b3a931db",
+      "size": 126057
     },
     {
       "id": "repository.kodaches",
+      "version": "1.1.0",
+      "zip": "repo/repository.kodaches/repository.kodaches-1.1.0.zip",
+      "sha256": "bc775ee2514c2e9b7e112cd43824152cc79a0d8623834b16302306bc017521b7",
+      "size": 91584
+    },
+    {
+      "id": "skin.kodaches",
       "version": "1.0.0",
-      "zip": "repo/repository.kodaches/repository.kodaches-1.0.0.zip",
-      "sha256": "0f87e63ac31aa7e29ccf702ba6fd0668237ee57d8abadb4854d8ca8af53c27e2",
-      "size": 91410
+      "zip": "repo/skin.kodaches/skin.kodaches-1.0.0.zip",
+      "sha256": "1c113dfffda65554e2deb6f71a41fe783d878d9d563e9e46a35fa12e71f12369",
+      "size": 4855690
     }
   ],
   "install": {

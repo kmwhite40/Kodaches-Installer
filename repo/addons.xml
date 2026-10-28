@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.kodaches" name="Kodaches" version="2.0.0" provider-name="Kodaches">
+<addon id="plugin.video.kodaches" name="Kodaches" version="2.1.0" provider-name="Kodaches">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
     </requires>
@@ -18,14 +18,14 @@
         <disclaimer lang="de_DE">Kodaches hostet oder liefert keine Inhalte. Die Verfügbarkeit der Sender hängt von den öffentlichen Streams der Sender ab.</disclaimer>
         <platform>all</platform>
         <license>GPL-2.0-or-later</license>
-        <news>2.0.0: standalone. Channels, sports schedules and films come straight from public sources; no server needed. Favorites and recently watched are kept on this device. A channel whose feed fails switches to its next feed.</news>
+        <news>2.1.0: faster lists (pages of 100), background clean-up of channels that stopped working, fastest stream first, adaptive streaming on by default, Streaming apps (YouTube, Disney+, Paramount+, ESPN, FOX Sports, PBS, OpenSubtitles), build setup, maintenance, home-screen rows for the Kodaches skin. 2.0.0: standalone. Channels, sports schedules and films come straight from public sources; no server needed. Favorites and recently watched are kept on this device. A channel whose feed fails switches to its next feed.</news>
         <assets>
             <icon>resources/icon.png</icon>
             <fanart>resources/fanart.jpg</fanart>
         </assets>
     </extension>
 </addon>
-<addon id="repository.kodaches" name="Kodaches Repository" version="1.0.0" provider-name="Kodaches">
+<addon id="repository.kodaches" name="Kodaches Repository" version="1.1.0" provider-name="Kodaches">
     <extension point="xbmc.addon.repository" name="Kodaches Repository">
         <dir>
             <info compressed="false">https://kmwhite40.github.io/Kodaches-Installer/repo/addons.xml</info>
@@ -33,12 +33,19 @@
             <datadir zip="true">https://kmwhite40.github.io/Kodaches-Installer/repo/</datadir>
             <hashes>sha256</hashes>
         </dir>
+        <!-- SlyGuy's public repository (official streaming-service add-ons: Disney+, Paramount+, ESPN,
+             FOX Sports, PBS). Listed so Kodaches can install them without adding another source. -->
+        <dir>
+            <info compressed="false">https://slyguy.uk/.repo/repository.slyguy/addons.xml</info>
+            <checksum>https://slyguy.uk/.repo/repository.slyguy/addons.xml.md5</checksum>
+            <datadir zip="true">https://slyguy.uk/.repo/repository.slyguy/</datadir>
+        </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">Updates for the Kodaches add-on</summary>
         <summary lang="de_DE">Aktualisierungen für das Kodaches-Add-on</summary>
-        <description lang="en_GB">Installs Kodaches and keeps it up to date through Kodi's own add-on updates. Contains only Kodaches add-ons.</description>
-        <description lang="de_DE">Installiert Kodaches und hält es über Kodis eigene Add-on-Aktualisierung aktuell. Enthält nur Kodaches-Add-ons.</description>
+        <description lang="en_GB">Installs Kodaches and keeps it up to date through Kodi's own add-on updates. Also lists SlyGuy's official streaming-service add-ons.</description>
+        <description lang="de_DE">Installiert Kodaches und hält es über Kodis eigene Add-on-Aktualisierung aktuell. Listet auch die offiziellen Streaming-Add-ons von SlyGuy.</description>
         <platform>all</platform>
         <license>GPL-2.0-or-later</license>
         <assets>
@@ -46,5 +53,34 @@
             <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
+</addon>
+<addon id="skin.kodaches" version="1.0.0" name="Kodaches" provider-name="Kodaches">
+	<requires>
+		<import addon="xbmc.gui" version="5.17.0"/>
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
+		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
+		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
+		<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
+		<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
+		<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2.0 (code), CC BY-SA 4.0 (media)</license>
+		<source>https://github.com/xbmc/xbmc/tree/master/addons/skin.estuary</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+		</assets>
+		<summary lang="en_GB">Kodaches skin: free live TV, sports and films front and centre. Based on Estuary by Team Kodi.</summary>
+		<summary lang="de_DE">Kodaches-Skin: freies Live-TV, Sport und Filme im Mittelpunkt. Basiert auf Estuary von Team Kodi.</summary>
+		<description lang="en_GB">A dark navy, teal and amber home screen built around the Kodaches add-on: Live TV, German TV, U.S. TV, Local, Sports, Movies and Streaming Apps sit in the main menu, each with its own rows of channels or films. Based on Estuary by Team Kodi (phil65, Ichabod Fletchman and contributors); Estuary's navigation, dialogs and views are kept as they are. Code licensed GPL-2.0, media CC BY-SA 4.0.</description>
+		<description lang="de_DE">Ein dunkler Startbildschirm in Navy, Türkis und Bernstein rund um das Kodaches-Add-on: Live-TV, Deutsches TV, US-TV, Lokal, Sport, Filme und Streaming-Apps im Hauptmenü, jeweils mit eigenen Reihen von Sendern oder Filmen. Basiert auf Estuary von Team Kodi (phil65, Ichabod Fletchman und Mitwirkende); Navigation, Dialoge und Ansichten von Estuary bleiben erhalten. Code unter GPL-2.0, Grafiken unter CC BY-SA 4.0.</description>
+		<disclaimer lang="en_GB">Based on Estuary by Team Kodi. Not affiliated with or endorsed by Team Kodi or the XBMC Foundation.</disclaimer>
+	</extension>
 </addon>
 </addons>
