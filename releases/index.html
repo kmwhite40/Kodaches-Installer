@@ -24,14 +24,16 @@
 </header>
 <main>
 <h1>Release notes</h1>
-<h2>1.0.2 · 2026-10-28</h2>
+<h2>2.3.0 · 2026-10-28</h2>
 <ul>
-  <li>The Galaxy address can be typed as just the IP (for example <code>192.168.0.10</code>); <code>http://</code> and port 8080 are added for you.</li>
-  <li>When Galaxy cannot be reached, Kodaches shows the address it tried, the TV's own address and the reason, and lets you try again.</li>
+  <li><strong>Fix:</strong> Pluto TV channels are no longer listed. Their server refuses Kodi, so they only showed <em>Playback failed</em>. Watch Pluto TV with the official <strong>Pluto TV</strong> add-on, now in Streaming apps together with <strong>Samsung TV Plus</strong> and <strong>Plex Live</strong> (free, no account, own guide).</li>
+  <li>The background channel check now checks the way Kodi plays, so a channel Kodi cannot play is hidden instead of failing when you pick it.</li>
+  <li>A channel list that fails to download is tried again at once and after 15 minutes, instead of leaving a section such as Local or Sports empty until the next refresh.</li>
+  <li><strong>Kodaches skin 1.2.0:</strong> Estuary's own sections are back on the home menu: Movies and TV shows from your library (with movie sets), Music, Pictures, Videos, Kodi Favourites, Weather and the rest, next to the Kodaches entries (now called Free Movies and Favorite Channels).</li>
 </ul>
 <h2>2.2.0 · 2026-10-28</h2>
 <ul>
-  <li><strong>TV guide:</strong> Kodaches channels appear in Kodi's own TV section with a programme guide for about 550 channels (Pluto TV, Samsung TV Plus, Plex, Roku, German broadcasters), through the official IPTV Simple client. Set it up from Settings &amp; looks, or with the build setup.</li>
+  <li><strong>TV guide:</strong> Kodaches channels appear in Kodi's own TV section with a programme guide for about 550 channels (Pluto TV, Samsung TV Plus, Plex, Roku, German broadcasters; Pluto TV removed in 2.3.0), through the official IPTV Simple client. Set it up from Settings &amp; looks, or with the build setup.</li>
   <li>Channel lists show what is on now; TV Guide is on the Kodaches home menu.</li>
   <li>The guide is rebuilt in the background twice a day, without channels that stopped working.</li>
   <li><strong>Fix:</strong> adaptive streaming (InputStream Adaptive) is off again by default. In testing it crashed Kodi on some German live streams. It is still in Add-on settings → Playback for a channel that buffers a lot.</li>
@@ -55,6 +57,11 @@
   <li>Favorites and recently watched are kept on each device.</li>
   <li>Removed: the Galaxy server connection (movies and shows from a home server, profiles, recordings).</li>
 </ul>
+<h2>1.0.2 · 2026-10-28</h2>
+<ul>
+  <li>The Galaxy address can be typed as just the IP (for example <code>192.168.0.10</code>); <code>http://</code> and port 8080 are added for you.</li>
+  <li>When Galaxy cannot be reached, Kodaches shows the address it tried, the TV's own address and the reason, and lets you try again.</li>
+</ul>
 <h2>1.0.1 · 2026-10-28</h2>
 <ul>
   <li>Maintenance release: removes an internal server name from a code comment. No changes for viewers.</li>
@@ -71,7 +78,7 @@
 </ul>
 </main>
 <footer>
-  Kodaches 2.2.0 · Free live TV, sports and classic films for Kodi · Kodaches hosts no content
+  Kodaches 2.3.0 · Free live TV, sports and classic films for Kodi · Kodaches hosts no content
   · <a href="../manifest.json">manifest.json</a> · <a href="../SHA256SUMS">SHA256SUMS</a>
 </footer>
 </body>
