@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.kodaches" name="Kodaches" version="1.0.1" provider-name="Kodaches">
+<addon id="plugin.video.kodaches" name="Kodaches" version="2.0.0" provider-name="Kodaches">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
     </requires>
@@ -10,15 +10,15 @@
     <extension point="xbmc.service" library="service.py"/>
     <extension point="xbmc.addon.metadata">
         <reuselanguageinvoker>true</reuselanguageinvoker>
-        <summary lang="en_GB">Live TV, sports, movies and shows from your Galaxy server</summary>
-        <summary lang="de_DE">Live-TV, Sport, Filme und Serien von Ihrem Galaxy-Server</summary>
-        <description lang="en_GB">Kodaches brings your household's Galaxy server to Kodi: free German and U.S. live TV with guide data, local channels, a sports center, your movies and shows with shared resume points, favorites and recordings. Profiles, favorites and watch history are the same as in the Galaxy apps. Requires a Galaxy server on your network. Plays only free-to-air, public and your own authorized sources.</description>
-        <description lang="de_DE">Kodaches bringt den Galaxy-Server Ihres Haushalts zu Kodi: freies deutsches und US-Live-TV mit Programmführer, lokale Sender, ein Sportcenter, Ihre Filme und Serien mit gemeinsamen Fortsetzungspunkten, Favoriten und Aufnahmen. Profile, Favoriten und Verlauf sind dieselben wie in den Galaxy-Apps. Benötigt einen Galaxy-Server in Ihrem Netzwerk. Spielt nur frei empfangbare, öffentliche und Ihre eigenen berechtigten Quellen ab.</description>
+        <summary lang="en_GB">Free German and U.S. live TV, local channels, sports schedules and classic films</summary>
+        <summary lang="de_DE">Freies deutsches und US-Live-TV, lokale Sender, Sportpläne und Filmklassiker</summary>
+        <description lang="en_GB">Kodaches gathers free, publicly available live TV in one place: German TV, U.S. TV, local Texas and Dallas - Fort Worth stations, news, kids, music and free streaming services, with a Sports Center showing league schedules and live scores, and thousands of public-domain classic films. Works on its own; no account or server needed. Channels come from public lists of free-to-air streams; availability depends on the broadcasters.</description>
+        <description lang="de_DE">Kodaches bündelt frei verfügbares Live-TV: deutsches und US-Fernsehen, lokale Sender aus Texas und Dallas - Fort Worth, Nachrichten, Kinder, Musik und kostenlose Streaming-Dienste, dazu ein Sportcenter mit Spielplänen und Live-Ergebnissen sowie Tausende gemeinfreie Filmklassiker. Funktioniert eigenständig, ohne Konto oder Server. Die Sender stammen aus öffentlichen Listen frei empfangbarer Streams; die Verfügbarkeit hängt von den Sendern ab.</description>
         <disclaimer lang="en_GB">Kodaches does not host or provide any content. Channel availability depends on the broadcasters' public streams.</disclaimer>
         <disclaimer lang="de_DE">Kodaches hostet oder liefert keine Inhalte. Die Verfügbarkeit der Sender hängt von den öffentlichen Streams der Sender ab.</disclaimer>
         <platform>all</platform>
         <license>GPL-2.0-or-later</license>
-        <news>1.0.1: maintenance release. 1.0.0: first release</news>
+        <news>2.0.0: standalone. Channels, sports schedules and films come straight from public sources; no server needed. Favorites and recently watched are kept on this device. A channel whose feed fails switches to its next feed.</news>
         <assets>
             <icon>resources/icon.png</icon>
             <fanart>resources/fanart.jpg</fanart>

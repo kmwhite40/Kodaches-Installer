@@ -24,11 +24,10 @@
 </header>
 <main>
 <h1>Help</h1>
-<h2>"No Galaxy server was found"</h2>
+<h2>"Could not load" when opening Kodaches</h2>
 <ul>
-  <li>The Kodi device must be on the same home network as Galaxy (not a guest Wi-Fi network).</li>
-  <li>Type the address yourself when asked: the one the Galaxy apps use, for example <code>http://192.168.1.20:8080</code>.</li>
-  <li>To change it later: Kodaches → Settings &amp; looks → Galaxy server.</li>
+  <li>Kodaches needs internet access to load the channel lists. Check that other apps on the device are online.</li>
+  <li>If it worked before, Kodaches keeps using the last lists it loaded; try again later or choose <em>Refresh channel lists</em>.</li>
 </ul>
 <h2>"Couldn't connect to network server" when adding the source</h2>
 <ul>
@@ -37,19 +36,19 @@
 </ul>
 <h2>A channel does not play</h2>
 <ul>
-  <li>Free channels come from the broadcasters' public streams, which sometimes go offline. Galaxy hides channels that stay offline; try another channel.</li>
+  <li>Free channels come from the broadcasters' public streams, which sometimes go offline. Kodaches switches to a channel's backup stream when there is one, and hides channels whose streams all failed in the last day (Add-on settings → <em>Show channels that failed recently</em> brings them back).</li>
   <li>Many German public broadcasters (ARD, ZDF and their regional channels) only stream inside Germany. From other countries those channels fail; Kodaches does not get around this.</li>
   <li>Stuttering on HLS channels: Kodaches → Settings &amp; looks → Add-on settings → Playback → <em>Play HLS with InputStream Adaptive</em> (install InputStream Adaptive from the official Kodi repository first).</li>
 </ul>
 <h2>Local channels: where are ABC, CBS and PBS?</h2>
-<p>Only a few local stations publish free streams. For the rest, an antenna tuner (such as an HDHomeRun) connected to Galaxy adds them under <em>My channels</em>.</p>
+<p>Only a few local stations publish free streams (in Dallas - Fort Worth: Fox 4, NBC 5 and UniMás). For the rest, use an antenna on your TV or the stations' own apps.</p>
 <h2>Kodi is slow on a Fire TV Stick</h2>
 <p>Use the <strong>Performance</strong> or <strong>Smart TV</strong> look, and restart the Fire TV once a week (Settings → My Fire TV → Restart).</p>
 <h2>Updates</h2>
 <p>Kodaches → Settings &amp; looks → <em>Check for updates</em>. If Kodi says the repository cannot be reached, open <a href="../manifest.json">manifest.json</a> in a browser to check this site is up.</p>
 </main>
 <footer>
-  Kodaches 1.0.1 · Kodi add-on for households that run a Galaxy server · Kodaches hosts no content
+  Kodaches 2.0.0 · Free live TV, sports and classic films for Kodi · Kodaches hosts no content
   · <a href="../manifest.json">manifest.json</a> · <a href="../SHA256SUMS">SHA256SUMS</a>
 </footer>
 </body>
