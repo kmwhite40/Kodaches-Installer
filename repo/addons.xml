@@ -1,30 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.kodaches" name="Kodaches" version="2.5.0" provider-name="Kodaches">
-    <requires>
-        <import addon="xbmc.python" version="3.0.1"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video audio</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py"/>
-    <extension point="xbmc.addon.metadata">
-        <reuselanguageinvoker>true</reuselanguageinvoker>
-        <summary lang="en_GB">Free German and U.S. live TV, local channels, sports schedules and classic films</summary>
-        <summary lang="de_DE">Freies deutsches und US-Live-TV, lokale Sender, Sportpläne und Filmklassiker</summary>
-        <description lang="en_GB">Kodaches gathers free, publicly available live TV in one place: German TV, U.S. TV, local Texas and Dallas - Fort Worth stations, news, kids, music and free streaming services, with a Sports Center showing league schedules and live scores, and thousands of public-domain classic films. Works on its own; no account or server needed. Channels come from public lists of free-to-air streams; availability depends on the broadcasters.</description>
-        <description lang="de_DE">Kodaches bündelt frei verfügbares Live-TV: deutsches und US-Fernsehen, lokale Sender aus Texas und Dallas - Fort Worth, Nachrichten, Kinder, Musik und kostenlose Streaming-Dienste, dazu ein Sportcenter mit Spielplänen und Live-Ergebnissen sowie Tausende gemeinfreie Filmklassiker. Funktioniert eigenständig, ohne Konto oder Server. Die Sender stammen aus öffentlichen Listen frei empfangbarer Streams; die Verfügbarkeit hängt von den Sendern ab.</description>
-        <disclaimer lang="en_GB">Kodaches does not host or provide any content. Channel availability depends on the broadcasters' public streams.</disclaimer>
-        <disclaimer lang="de_DE">Kodaches hostet oder liefert keine Inhalte. Die Verfügbarkeit der Sender hängt von den öffentlichen Streams der Sender ab.</disclaimer>
-        <platform>all</platform>
-        <license>GPL-2.0-or-later</license>
-        <news>2.5.0: World News: 20 international news channels (Al Jazeera, BBC News, France 24, CNN International, NHK World, CBC, ABC Australia and more), only from the broadcasters' own servers. Channels start faster: Kodaches hands Kodi one quality of a channel instead of the whole list. Streaming apps in folders (TV &amp; Movies, News, Sports, German TV, Kids, Music &amp; Radio, Tools) with new official add-ons: Hulu, HBO Max, The Roku Channel, Crackle, Plex, NewsON, ARD/ZDF Mediathek, Arte, Trakt, Up Next, Backup, Radio, Mixcloud, Multi Weather (set as Kodi's weather provider) and more. Fix: channels in several languages (DW English, Spanish, Arabic) are no longer merged into one. 2.3.0: Pluto TV channels are no longer listed: their server refuses Kodi, so they only showed "Playback failed". Watch Pluto TV with the official Pluto TV add-on, now in Streaming apps with Samsung TV Plus and Plex Live (free, no account). The channel check now checks as Kodi, so channels Kodi cannot play are hidden. A channel list that fails to download is tried again at once and after 15 minutes, instead of leaving Local or Sports empty for hours. Older versions: kmwhite40.github.io/Kodaches-Installer/releases/</news>
-        <assets>
-            <icon>resources/icon.png</icon>
-            <fanart>resources/fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
 <addon id="repository.kodaches" name="Kodaches Repository" version="1.1.0" provider-name="Kodaches">
     <extension point="xbmc.addon.repository" name="Kodaches Repository">
         <dir>
@@ -51,6 +26,83 @@
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+<addon id="plugin.program.kodaches.build" name="Kodaches Build" version="1.0.0" provider-name="Kodaches">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Installs the complete Kodaches build in one go</summary>
+        <summary lang="de_DE">Installiert den kompletten Kodaches-Build in einem Schritt</summary>
+        <description lang="en_GB">Install this one zip and it sets up the whole Kodaches build: it adds the Kodaches repository, installs Kodaches and the Kodaches skin from it (so they keep updating themselves), the free apps (Pluto TV, Samsung TV Plus, Plex Live, YouTube, PBS, radio, weather and more, all official add-ons), and sets up the TV guide and streaming settings. Kodi asks you to confirm each download.</description>
+        <description lang="de_DE">Diese eine Zip-Datei richtet den ganzen Kodaches-Build ein: Sie fügt das Kodaches-Repository hinzu, installiert daraus Kodaches und den Kodaches-Skin (die sich so selbst aktualisieren), die kostenlosen Apps (Pluto TV, Samsung TV Plus, Plex Live, YouTube, PBS, Radio, Wetter und mehr, alles offizielle Add-ons) und richtet Programmführer und Streaming-Einstellungen ein. Kodi fragt bei jedem Download nach.</description>
+        <disclaimer lang="en_GB">Installs only the Kodaches add-ons and official add-ons from the Kodi and SlyGuy repositories.</disclaimer>
+        <platform>all</platform>
+        <license>GPL-2.0-or-later</license>
+        <news>1.0.0: one zip installs the whole Kodaches build.</news>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+<addon id="plugin.video.kodaches" name="Kodaches" version="2.6.0" provider-name="Kodaches">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+        <import addon="skin.kodaches" version="1.3.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video audio</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py"/>
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <summary lang="en_GB">Free German and U.S. live TV, local channels, sports schedules and classic films</summary>
+        <summary lang="de_DE">Freies deutsches und US-Live-TV, lokale Sender, Sportpläne und Filmklassiker</summary>
+        <description lang="en_GB">Kodaches gathers free, publicly available live TV in one place: German TV, U.S. TV, local Texas and Dallas - Fort Worth stations, news, kids, music and free streaming services, with a Sports Center showing league schedules and live scores, and thousands of public-domain classic films. Works on its own; no account or server needed. Channels come from public lists of free-to-air streams; availability depends on the broadcasters.</description>
+        <description lang="de_DE">Kodaches bündelt frei verfügbares Live-TV: deutsches und US-Fernsehen, lokale Sender aus Texas und Dallas - Fort Worth, Nachrichten, Kinder, Musik und kostenlose Streaming-Dienste, dazu ein Sportcenter mit Spielplänen und Live-Ergebnissen sowie Tausende gemeinfreie Filmklassiker. Funktioniert eigenständig, ohne Konto oder Server. Die Sender stammen aus öffentlichen Listen frei empfangbarer Streams; die Verfügbarkeit hängt von den Sendern ab.</description>
+        <disclaimer lang="en_GB">Kodaches does not host or provide any content. Channel availability depends on the broadcasters' public streams.</disclaimer>
+        <disclaimer lang="de_DE">Kodaches hostet oder liefert keine Inhalte. Die Verfügbarkeit der Sender hängt von den öffentlichen Streams der Sender ab.</disclaimer>
+        <platform>all</platform>
+        <license>GPL-2.0-or-later</license>
+        <news>2.6.0: One zip installs the whole build (Kodaches Build): repository, Kodaches, skin, settings, TV guide and the free apps. Fix: SlyGuy apps (Pluto TV, Disney+, ESPN, ...) did not install unless SlyGuy's repository was already there; Kodaches now installs it first. 2.5.0: World News: 20 international news channels (Al Jazeera, BBC News, France 24, CNN International, NHK World, CBC, ABC Australia and more), only from the broadcasters' own servers. Channels start faster: Kodaches hands Kodi one quality of a channel instead of the whole list. Streaming apps in folders (TV &amp; Movies, News, Sports, German TV, Kids, Music &amp; Radio, Tools) with new official add-ons: Hulu, HBO Max, The Roku Channel, Crackle, Plex, NewsON, ARD/ZDF Mediathek, Arte, Trakt, Up Next, Backup, Radio, Mixcloud, Multi Weather (set as Kodi's weather provider) and more. Fix: channels in several languages (DW English, Spanish, Arabic) are no longer merged into one. Older versions: kmwhite40.github.io/Kodaches-Installer/releases/</news>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+<addon id="script.kodaches.apps" name="Kodaches Apps" version="1.0.0" provider-name="Kodaches">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+        <import addon="slyguy.pluto.tv.provider" version="0.7.0"/>
+        <import addon="slyguy.samsung.tv.plus" version="0.2.0"/>
+        <import addon="slyguy.plex.live" version="0.2.0"/>
+        <import addon="slyguy.pbs.live" version="0.2.0"/>
+        <import addon="plugin.video.youtube" version="7.0.0"/>
+        <import addon="plugin.video.newson" version="1.3.0"/>
+        <import addon="plugin.video.ardmediathek_de" version="6.0.0"/>
+        <import addon="plugin.audio.radio_de" version="3.0.0"/>
+        <import addon="service.subtitles.opensubtitles-com" version="1.0.0"/>
+        <import addon="weather.multi" version="1.1.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">The free apps of the Kodaches build in one install</summary>
+        <summary lang="de_DE">Die kostenlosen Apps des Kodaches-Builds in einer Installation</summary>
+        <description lang="en_GB">Installs the free official apps Kodaches recommends, in one step: Pluto TV, Samsung TV Plus, Plex Live and PBS (SlyGuy), YouTube, NewsON, ARD Mediathek, Radio, OpenSubtitles.com and Multi Weather (Kodi repository). It has no code of its own.</description>
+        <description lang="de_DE">Installiert die kostenlosen offiziellen Apps, die Kodaches empfiehlt, in einem Schritt: Pluto TV, Samsung TV Plus, Plex Live und PBS (SlyGuy), YouTube, NewsON, ARD Mediathek, Radio, OpenSubtitles.com und Multi Weather (Kodi-Repository). Es enthält keinen eigenen Code.</description>
+        <platform>all</platform>
+        <license>GPL-2.0-or-later</license>
+        <news>1.0.0: first version.</news>
+        <assets>
+            <icon>resources/icon.png</icon>
         </assets>
     </extension>
 </addon>

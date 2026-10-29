@@ -24,16 +24,15 @@
 </header>
 <main>
 <h1>Install Kodaches</h1>
-<p class="lead">Kodaches installs from its own Kodi repository, so Kodi keeps it up to date. The steps are the same on every device; only installing Kodi itself differs.</p>
+<p class="lead">One zip installs the whole Kodaches build: the add-on, its skin and home screen, streaming settings, the TV guide and the free apps. Everything comes from the Kodaches repository and the official Kodi and SlyGuy repositories, so Kodi keeps it up to date. The steps are the same on every device; only installing Kodi itself differs.</p>
 <p>First install Kodi 20 or newer: <a href="../android/">Android TV</a> · <a href="../firetv/">Fire TV</a> · <a href="../windows-linux/">Windows, Linux, macOS</a>. Then, in Kodi:</p>
 <ol class="steps">
   <li><strong>Allow add-ons from outside the official repository.</strong> Settings (gear) → System → Add-ons → turn on <em>Unknown sources</em> → Yes.</li>
   <li><strong>Add the Kodaches source.</strong> Settings → File manager → Add source → &lt;None&gt; → type<br><span class="url">https://kmwhite40.github.io/Kodaches-Installer/kodi/</span><br>→ OK. Name it <code>kodaches</code> → OK.</li>
-  <li><strong>Install the repository.</strong> Settings → Add-ons → Install from zip file → <code>kodaches</code> → <code>repository.kodaches-1.1.0.zip</code>. Wait for "Kodaches Repository installed".</li>
-  <li><strong>Install Kodaches.</strong> Add-ons → Install from repository → Kodaches Repository → Video add-ons → Kodaches → Install.</li>
-  <li><strong>Open it.</strong> Add-ons → Video add-ons → Kodaches. The first time, it loads the channel lists (a few seconds).</li>
+  <li><strong>Install the build.</strong> Settings → Add-ons → Install from zip file → <code>kodaches</code> → <code>plugin.program.kodaches.build-1.0.0.zip</code>.</li>
+  <li><strong>Say Yes.</strong> Kodaches asks "Install the Kodaches build?" → <em>Yes</em>. Kodi then asks before each download ("Add-on required … download?", with <em>No</em> selected: move to <em>Yes</em>) and whether to keep the new skin (<em>Yes</em>). That is all: the home screen switches to Kodaches when it is done.</li>
 </ol>
-<div class="note ok"><strong>Make it the full Kodaches build:</strong> Kodaches → <em>Settings &amp; looks</em> → <em>Set up the Kodaches build</em>. It installs the Kodaches skin and home screen, applies streaming settings, and offers the streaming apps. Kodi asks you to confirm each install and to keep the new skin.</div>
+<div class="note"><strong>Repository only:</strong> to install just the Kodaches add-on without the build, use <code>repository.kodaches-1.1.0.zip</code> in step 3 instead, then Add-ons → Install from repository → Kodaches Repository → Video add-ons → Kodaches. The build can be added later from Kodaches → <em>Settings &amp; looks</em> → <em>Set up the Kodaches build</em>.</div>
 <div class="qr">
   <figure><img src="../qr-install.png" alt="QR code for this page"><figcaption>This page</figcaption></figure>
   <figure><img src="../qr-kodi-source.png" alt="QR code for the Kodi source address"><figcaption>Kodi source address</figcaption></figure>
@@ -42,7 +41,7 @@
 <p>Kodi checks the Kodaches repository by itself (about once a day) and installs updates. To check now: Kodaches → Settings &amp; looks → <em>Check for updates</em>.</p>
 </main>
 <footer>
-  Kodaches 2.5.0 · Free live TV, sports and classic films for Kodi · Kodaches hosts no content
+  Kodaches 2.6.0 · Free live TV, sports and classic films for Kodi · Kodaches hosts no content
   · <a href="../manifest.json">manifest.json</a> · <a href="../SHA256SUMS">SHA256SUMS</a>
 </footer>
 </body>

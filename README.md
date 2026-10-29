@@ -15,13 +15,13 @@ available live TV, sports schedules and public-domain films; it hosts no content
 1. **Settings (gear) → System → Add-ons**: turn on **Unknown sources** and answer **Yes** (once).
 2. **Settings → File manager → Add source → <None>**, type `https://kmwhite40.github.io/Kodaches-Installer/kodi/`,
    name it `kodaches`, **OK**.
-3. **Add-ons → Install from zip file → kodaches →** `repository.kodaches-*.zip`. Wait for "Kodaches Repository installed".
-4. **Add-ons → Install from repository → Kodaches Repository → Video add-ons → Kodaches → Install.**
-   Installing from the repository is what lets Kodaches update itself.
-5. Open **Kodaches → Settings & looks → Set up the Kodaches build**: the Kodaches skin, buffering settings, the TV guide
-   and the apps. Answer **Yes** when Kodi asks to install or keep the skin.
+3. **Add-ons → Install from zip file → kodaches →** `plugin.program.kodaches.build-*.zip` (Kodaches Build).
+4. Answer **Yes**: Kodaches asks "Install the Kodaches build?", then Kodi asks before each download ("Add-on required …
+   download?" opens with **No** selected: move to **Yes**) and whether to keep the new skin. When it is done the home
+   screen is Kodaches, with the TV guide and the free apps installed.
 
-**Updating:** Kodi updates Kodaches by itself within about a day. To update now: **Add-ons → My add-ons → Video add-ons →
+Only the add-on, without the build: in step 3 pick `repository.kodaches-*.zip`, then **Add-ons → Install from repository →
+Kodaches Repository → Video add-ons → Kodaches → Install**.
+
+**Updating:** Kodi updates everything by itself within about a day. To update now: **Add-ons → My add-ons → Video add-ons →
 Kodaches → Update**, then **Look and feel → Skin → Kodaches → Update**, and restart Kodi.
-
-**Apps:** Kodi asks "Add-on required … download?" with **No** selected: move to **Yes** first.
