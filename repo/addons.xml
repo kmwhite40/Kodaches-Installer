@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="repository.kodaches" name="Kodaches Repository" version="1.1.0" provider-name="Kodaches">
+<addon id="repository.kodaches" name="Kodaches Repository" version="1.2.0" provider-name="Kodaches">
     <extension point="xbmc.addon.repository" name="Kodaches Repository">
         <dir>
             <info compressed="false">https://kmwhite40.github.io/Kodaches-Installer/repo/addons.xml</info>
@@ -15,12 +15,19 @@
             <checksum>https://slyguy.uk/.repo/repository.slyguy/addons.xml.md5</checksum>
             <datadir zip="true">https://slyguy.uk/.repo/repository.slyguy/</datadir>
         </dir>
+        <!-- jurialmunkey's repository, Kodi 21 (Omega) folder: Arctic Horizon 2 for the Modern look and the helpers
+             it needs. Kodi 20 skips these add-ons (they need Kodi 21). -->
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/omega/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/omega/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/omega/zips/</datadir>
+        </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">Updates for the Kodaches add-on</summary>
         <summary lang="de_DE">Aktualisierungen für das Kodaches-Add-on</summary>
-        <description lang="en_GB">Installs Kodaches and keeps it up to date through Kodi's own add-on updates. Also lists SlyGuy's official streaming-service add-ons.</description>
-        <description lang="de_DE">Installiert Kodaches und hält es über Kodis eigene Add-on-Aktualisierung aktuell. Listet auch die offiziellen Streaming-Add-ons von SlyGuy.</description>
+        <description lang="en_GB">Installs Kodaches and keeps it up to date through Kodi's own add-on updates. Also lists SlyGuy's official streaming-service add-ons and jurialmunkey's Arctic Horizon 2 skin (the Modern look).</description>
+        <description lang="de_DE">Installiert Kodaches und hält es über Kodis eigene Add-on-Aktualisierung aktuell. Listet auch die offiziellen Streaming-Add-ons von SlyGuy und den Skin Arctic Horizon 2 von jurialmunkey (das moderne Aussehen).</description>
         <platform>all</platform>
         <license>GPL-2.0-or-later</license>
         <assets>
@@ -52,7 +59,7 @@
         </assets>
     </extension>
 </addon>
-<addon id="plugin.video.kodaches" name="Kodaches" version="2.6.0" provider-name="Kodaches">
+<addon id="plugin.video.kodaches" name="Kodaches" version="2.7.0" provider-name="Kodaches">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
         <import addon="skin.kodaches" version="1.3.0"/>
@@ -71,7 +78,7 @@
         <disclaimer lang="de_DE">Kodaches hostet oder liefert keine Inhalte. Die Verfügbarkeit der Sender hängt von den öffentlichen Streams der Sender ab.</disclaimer>
         <platform>all</platform>
         <license>GPL-2.0-or-later</license>
-        <news>2.6.0: One zip installs the whole build (Kodaches Build): repository, Kodaches, skin, settings, TV guide and the free apps. Fix: SlyGuy apps (Pluto TV, Disney+, ESPN, ...) did not install unless SlyGuy's repository was already there; Kodaches now installs it first. 2.5.0: World News: 20 international news channels (Al Jazeera, BBC News, France 24, CNN International, NHK World, CBC, ABC Australia and more), only from the broadcasters' own servers. Channels start faster: Kodaches hands Kodi one quality of a channel instead of the whole list. Streaming apps in folders (TV &amp; Movies, News, Sports, German TV, Kids, Music &amp; Radio, Tools) with new official add-ons: Hulu, HBO Max, The Roku Channel, Crackle, Plex, NewsON, ARD/ZDF Mediathek, Arte, Trakt, Up Next, Backup, Radio, Mixcloud, Multi Weather (set as Kodi's weather provider) and more. Fix: channels in several languages (DW English, Spanish, Arabic) are no longer merged into one. Older versions: kmwhite40.github.io/Kodaches-Installer/releases/</news>
+        <news>2.7.0: The Modern look: Arctic Horizon 2 (the skin Diggz Xenon and ArcticFlix are built on, in its original form) with the Kodaches menu and rows: Live TV, TV Guide, News, Sports, Kids, Free Movies, Streaming Apps. Chosen in the build setup or Settings &amp; looks. Downloads that fail on a slow Kodi mirror are tried again. 2.6.0: One zip installs the whole build (Kodaches Build): repository, Kodaches, skin, settings, TV guide and the free apps. Fix: SlyGuy apps (Pluto TV, Disney+, ESPN, ...) did not install unless SlyGuy's repository was already there; Kodaches now installs it first. Older versions: kmwhite40.github.io/Kodaches-Installer/releases/</news>
         <assets>
             <icon>resources/icon.png</icon>
             <fanart>resources/fanart.jpg</fanart>
