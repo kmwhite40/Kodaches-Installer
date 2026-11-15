@@ -59,10 +59,10 @@
         </assets>
     </extension>
 </addon>
-<addon id="plugin.video.kodaches" name="Kodaches" version="2.7.1" provider-name="Kodaches">
+<addon id="plugin.video.kodaches" name="Kodaches" version="2.7.2" provider-name="Kodaches">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
-        <import addon="skin.kodaches" version="1.3.0"/>
+        <import addon="skin.kodaches" version="1.4.0"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video audio</provides>
@@ -78,7 +78,7 @@
         <disclaimer lang="de_DE">Kodaches hostet oder liefert keine Inhalte. Die Verfügbarkeit der Sender hängt von den öffentlichen Streams der Sender ab.</disclaimer>
         <platform>all</platform>
         <license>GPL-2.0-or-later</license>
-        <news>2.7.1: Fix: channels relayed through stream.mcquack.net are no longer listed. Home-network security services (AT&amp;T ActiveArmor) block that host as malware, and the background channel check set off repeated alerts. 2.7.0: The Modern look: Arctic Horizon 2 (the skin Diggz Xenon and ArcticFlix are built on, in its original form) with the Kodaches menu and rows: Live TV, TV Guide, News, Sports, Kids, Free Movies, Streaming Apps. Chosen in the build setup or Settings &amp; looks. Downloads that fail on a slow Kodi mirror are tried again. 2.6.0: One zip installs the whole build (Kodaches Build): repository, Kodaches, skin, settings, TV guide and the free apps. Fix: SlyGuy apps (Pluto TV, Disney+, ESPN, ...) did not install unless SlyGuy's repository was already there; Kodaches now installs it first. Older versions: kmwhite40.github.io/Kodaches-Installer/releases/</news>
+        <news>2.7.2: Kodaches skin 1.4.0, Aurora: a new home backdrop, a more compact menu with a glass focus bar, and a refreshed colour palette with easier-to-read focused rows. 2.7.1: Fix: channels relayed through stream.mcquack.net are no longer listed. Home-network security services (AT&amp;T ActiveArmor) block that host as malware, and the background channel check set off repeated alerts. 2.7.0: The Modern look: Arctic Horizon 2 (the skin Diggz Xenon and ArcticFlix are built on, in its original form) with the Kodaches menu and rows: Live TV, TV Guide, News, Sports, Kids, Free Movies, Streaming Apps. Chosen in the build setup or Settings &amp; looks. Downloads that fail on a slow Kodi mirror are tried again. 2.6.0: One zip installs the whole build (Kodaches Build): repository, Kodaches, skin, settings, TV guide and the free apps. Fix: SlyGuy apps (Pluto TV, Disney+, ESPN, ...) did not install unless SlyGuy's repository was already there; Kodaches now installs it first. Older versions: kmwhite40.github.io/Kodaches-Installer/releases/</news>
         <assets>
             <icon>resources/icon.png</icon>
             <fanart>resources/fanart.jpg</fanart>
@@ -113,7 +113,7 @@
         </assets>
     </extension>
 </addon>
-<addon id="skin.kodaches" version="1.3.0" name="Kodaches" provider-name="Kodaches">
+<addon id="skin.kodaches" version="1.4.0" name="Kodaches" provider-name="Kodaches">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0"/>
 	</requires>
@@ -135,10 +135,11 @@
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.jpg</fanart>
 		</assets>
-		<summary lang="en_GB">Kodaches skin: free live TV, sports and films front and centre. Based on Estuary by Team Kodi.</summary>
-		<summary lang="de_DE">Kodaches-Skin: freies Live-TV, Sport und Filme im Mittelpunkt. Basiert auf Estuary von Team Kodi.</summary>
-		<description lang="en_GB">A dark navy, teal and amber home screen built around the Kodaches add-on: Live TV, German TV, U.S. TV, Local, Sports, Movies and Streaming Apps sit in the main menu, each with its own rows of channels or films. Based on Estuary by Team Kodi (phil65, Ichabod Fletchman and contributors); Estuary's navigation, dialogs and views are kept as they are. Code licensed GPL-2.0, media CC BY-SA 4.0.</description>
-		<description lang="de_DE">Ein dunkler Startbildschirm in Navy, Türkis und Bernstein rund um das Kodaches-Add-on: Live-TV, Deutsches TV, US-TV, Lokal, Sport, Filme und Streaming-Apps im Hauptmenü, jeweils mit eigenen Reihen von Sendern oder Filmen. Basiert auf Estuary von Team Kodi (phil65, Ichabod Fletchman und Mitwirkende); Navigation, Dialoge und Ansichten von Estuary bleiben erhalten. Code unter GPL-2.0, Grafiken unter CC BY-SA 4.0.</description>
+		<summary lang="en_GB">Kodaches Aurora: a cinematic, remote-first skin for live TV, sports and films. Based on Estuary by Team Kodi.</summary>
+		<summary lang="de_DE">Kodaches Aurora: ein filmischer, fernbedienungsfreundlicher Skin für Live-TV, Sport und Filme. Basiert auf Estuary von Team Kodi.</summary>
+		<description lang="en_GB">A redesigned home experience with an atmospheric aurora backdrop, readable glass navigation, a compact remote-first menu, and curated rows for Live TV, German TV, U.S. TV, Local, Sports, Movies and Streaming Apps. Based on Estuary by Team Kodi (phil65, Ichabod Fletchman and contributors); Kodi library sections, navigation, dialogs and views remain available. Code licensed GPL-2.0, media CC BY-SA 4.0.</description>
+		<description lang="de_DE">Ein neu gestalteter Startbildschirm mit atmosphärischem Aurora-Hintergrund, gut lesbarer Glasnavigation, kompaktem Fernbedienungsmenü und kuratierten Reihen für Live-TV, deutsches Fernsehen, US-TV, lokale Sender, Sport, Filme und Streaming-Apps. Basiert auf Estuary von Team Kodi (phil65, Ichabod Fletchman und Mitwirkende); Kodi-Bibliotheksbereiche, Navigation, Dialoge und Ansichten bleiben erhalten. Code unter GPL-2.0, Grafiken unter CC BY-SA 4.0.</description>
+		<news>1.4.0: Kodaches Aurora home redesign: custom atmospheric background and contrast scrim, compact remote-first menu, glass focus treatment, and refreshed high-contrast color palette.</news>
 		<disclaimer lang="en_GB">Based on Estuary by Team Kodi. Not affiliated with or endorsed by Team Kodi or the XBMC Foundation.</disclaimer>
 	</extension>
 </addon>
