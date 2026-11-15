@@ -24,6 +24,10 @@
 </header>
 <main>
 <h1>Release notes</h1>
+<h2>2.7.1 · 2026-11-15</h2>
+<ul>
+  <li><strong>Fix:</strong> channels relayed through <code>stream.mcquack.net</code>, an unofficial relay of other broadcasters' channels, are no longer listed. Home-network security services such as AT&amp;T ActiveArmor block that host as malware, so they never played, and the background channel check set off repeated "tried to visit a website that posed a malware risk" alerts. 91 channels whose only feed was that relay are gone; channels that also have another feed keep it. Kodaches rebuilds its channel list right after the update.</li>
+</ul>
 <h2>2.7.0 · 2026-10-29</h2>
 <ul>
   <li><strong>The Modern look:</strong> Arctic Horizon 2 by jurialmunkey, the skin the Diggz Xenon and ArcticFlix builds are modified from, in its original form, with the Kodaches top bar and rows: Live TV (German TV, free channels, favourites), TV Guide, News (World News, US News), Sports (today's games, sports channels), Kids, Free Movies, Streaming Apps, plus your library. Pick it in the build setup (it is preselected) or in Kodaches → Settings &amp; looks → Modern.</li>
@@ -100,7 +104,7 @@
 </ul>
 </main>
 <footer>
-  Kodaches 2.7.0 · Free live TV, sports and classic films for Kodi · Kodaches hosts no content
+  Kodaches 2.7.1 · Free live TV, sports and classic films for Kodi · Kodaches hosts no content
   · <a href="../manifest.json">manifest.json</a> · <a href="../SHA256SUMS">SHA256SUMS</a>
 </footer>
 </body>
