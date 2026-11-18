@@ -59,7 +59,7 @@
         </assets>
     </extension>
 </addon>
-<addon id="plugin.video.kodaches" name="Kodaches" version="2.7.2" provider-name="Kodaches">
+<addon id="plugin.video.kodaches" name="Kodaches" version="2.8.0" provider-name="Kodaches">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
         <import addon="skin.kodaches" version="1.4.0"/>
@@ -78,7 +78,7 @@
         <disclaimer lang="de_DE">Kodaches hostet oder liefert keine Inhalte. Die Verfügbarkeit der Sender hängt von den öffentlichen Streams der Sender ab.</disclaimer>
         <platform>all</platform>
         <license>GPL-2.0-or-later</license>
-        <news>2.7.2: Kodaches skin 1.4.0, Aurora: a new home backdrop, a more compact menu with a glass focus bar, and a refreshed colour palette with easier-to-read focused rows. 2.7.1: Fix: channels relayed through stream.mcquack.net are no longer listed. Home-network security services (AT&amp;T ActiveArmor) block that host as malware, and the background channel check set off repeated alerts. 2.7.0: The Modern look: Arctic Horizon 2 (the skin Diggz Xenon and ArcticFlix are built on, in its original form) with the Kodaches menu and rows: Live TV, TV Guide, News, Sports, Kids, Free Movies, Streaming Apps. Chosen in the build setup or Settings &amp; looks. Downloads that fail on a slow Kodi mirror are tried again. 2.6.0: One zip installs the whole build (Kodaches Build): repository, Kodaches, skin, settings, TV guide and the free apps. Fix: SlyGuy apps (Pluto TV, Disney+, ESPN, ...) did not install unless SlyGuy's repository was already there; Kodaches now installs it first. Older versions: kmwhite40.github.io/Kodaches-Installer/releases/</news>
+        <news>2.8.0: No more repeated network alerts: when a channel host answers with a block or warning page (AT&amp;T ActiveArmor, router and DNS filters), the background channel check stops contacting it for 30 days, hides its channels and says so once. Setup wizard: offered once when Kodaches first starts; it asks the language, the look and whether to add the TV guide, installs the free apps and ends with a summary. Fix: after a new look, Kodaches waits for Kodi's Keep this change? question before asking its next one. 2.7.2: Kodaches skin 1.4.0, Aurora: new home backdrop, compact menu with a glass focus bar, easier-to-read focused rows. 2.7.1: Fix: channels relayed through stream.mcquack.net are no longer listed (AT&amp;T ActiveArmor blocks that host as malware). Older versions: kmwhite40.github.io/Kodaches-Installer/releases/</news>
         <assets>
             <icon>resources/icon.png</icon>
             <fanart>resources/fanart.jpg</fanart>

@@ -24,6 +24,12 @@
 </header>
 <main>
 <h1>Release notes</h1>
+<h2>2.8.0 · 2026-11-17</h2>
+<ul>
+  <li><strong>No more repeated network alerts:</strong> some home networks block a channel host themselves (AT&amp;T ActiveArmor, router and DNS filters) and alert your phone each time a device contacts it. When a host answers with such a block page (or with any warning page instead of video), Kodaches' background channel check stops contacting it for 30 days, hides the channels that only it carries, and tells you once with a notification. Before, it kept trying every feed on that host each time it checked.</li>
+  <li><strong>Setup wizard:</strong> when Kodaches starts for the first time it offers to set itself up (Set up now / Later). The wizard asks your language (English or Deutsch), the look (Modern or Kodaches) and whether to show Kodaches channels in Kodi's TV guide, installs the free apps, and ends with a summary of what it did. Press Back on the first two questions to stop. Run it again any time from Kodaches → Settings &amp; looks → Set up the Kodaches build.</li>
+  <li><strong>Fix:</strong> after switching to a new look, Kodi asks "Keep this change?". Kodaches asked its next question at the same moment, and the two could knock each other off the screen. It now waits for your answer first, in the setup and in Settings &amp; looks.</li>
+</ul>
 <h2>2.7.2 · 2026-11-15</h2>
 <ul>
   <li><strong>Kodaches skin 1.4.0, Aurora:</strong> a new home backdrop drawn for Kodaches, a shaded left side so the menu stays readable over any background, and a more compact menu that fits more entries on screen, with a glass bar on the focused entry.</li>
@@ -110,7 +116,7 @@
 </ul>
 </main>
 <footer>
-  Kodaches 2.7.2 · Free live TV, sports and classic films for Kodi · Kodaches hosts no content
+  Kodaches 2.8.0 · Free live TV, sports and classic films for Kodi · Kodaches hosts no content
   · <a href="../manifest.json">manifest.json</a> · <a href="../SHA256SUMS">SHA256SUMS</a>
 </footer>
 </body>
